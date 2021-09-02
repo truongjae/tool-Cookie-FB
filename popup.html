@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tự động tuyển thành viên</title>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0px;
+            color: #303030;
+            font-size: 75%;
+            background-image: linear-gradient( to right, #ed68ff, #ffc077);
+        }
+        
+        .row {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+        
+        .main {
+            width: 300px;
+            height: 490px;
+            padding: 10px;
+            display: inline-block;
+        }
+        
+        textarea {
+            width: 300px;
+            height: 175px;
+            font-size: 18px;
+            resize: none;
+            outline: none;
+            margin: auto;
+            border: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #btnLogin{
+                margin: auto;
+                width: 300px;
+                height: 40px;
+                background-color: rgb(70, 134, 255);
+                color: white;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 1000;
+                border-radius: 20px;
+                border: none;
+                transition: all 1s;
+                margin-top: 10px;
+        }
+        #btnGetCookie{
+            margin: auto;
+            width: 300px;
+            height: 40px;
+            background-color: rgb(255, 0, 119);
+            color: white;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 1000;
+            border-radius: 20px;
+            border: none;
+            transition: all 1s;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #linkfb{
+            margin-top: 300px;
+            color: rgb(255, 224, 255);
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="background.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="row">
+            <textarea id="inputLogin" placeholder="Thầy yêu cầu mày nhập cookie để đăng nhập"></textarea>
+            <button id="btnLogin">Đăng Nhập</button>
+            <button id="btnGetCookie">Copy Cookie</button>
+            <textarea id="inputGetCookie" placeholder="Mày vui lòng đăng nhập fb để lấy cookie"></textarea>
+            <a id="linkfb" href="https://www.facebook.com/100029031824085">Inbox thầy Chường để được hỗ trợ</a>
+        </div>
+    </div>
+</body>
+</html>

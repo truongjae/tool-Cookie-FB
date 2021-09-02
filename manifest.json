@@ -1,0 +1,26 @@
+{
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "manifest_version": 2,
+   "name": "Tool Thầy Chường",
+   "description": "Tool Thầy Chường",
+   "homepage_url": "https://www.facebook.com/100029031824085",
+	"author": "Truongjae",
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png",
+      "48": "img/icon_48.png"
+   },
+   "content_scripts": [{
+      "js": ["background.js"],
+      "matches": ["https://www.facebook.com/*", "https://mbasic.facebook.com/*", "https://web.facebook.com/*", "https://m.facebook.com/*", "https://mobile.facebook.com/*"]
+  }],
+   "permissions": ["cookies",
+   "tabs", "http://*/", "https://*/", "clipboardWrite", "clipboardRead", "notifications", "declarativeContent", "activeTab", "*://*.facebook.com/*"],
+   "version": "1.0",
+   "browser_action": {
+       "default_icon": "img/icon.png",
+       "default_popup": "popup.html",
+       "default_title": "Tool Thầy Chường"
+   },
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
